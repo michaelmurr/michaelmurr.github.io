@@ -1,62 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&family=Nova+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&family=Nova+Round&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
 }
 
-li, a, button{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
 }
 
-.logo{
-    cursor:pointer;
-    width: 180px;
+.logo {
+  cursor: pointer;
+  width: 180px;
 }
 
-.nav{
-    background-color: rgba(0,0,0,0.7);
-
+.nav {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.nav_links{
-    list-style: none;
+.nav_links {
+  list-style: none;
 }
 
-.nav_links li{
-    display: inline-block;
-    padding: 0 20px;
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px;
 }
 
-.nav_links li a{
-    transition: all 0.3 ease 0s;
+.nav_links li a {
+  transition: all 0.3 ease 0s;
 }
-.nav_links li a:hover{
-color: #0088a9;
-}
-
-button{
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+.nav_links li a:hover {
+  color: #fbc390;
 }
 
-button:hover{
-    background-color: rgba(0, 136, 169, 0.8);
+button {
+  padding: 9px 25px;
+  background-color: rgba(251, 195, 144, 1);
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.8s ease 0s;
 }
+
+button:hover {
+  background-color: rgba(251, 195, 144, 0.8);
+}
+
+.headerContainer {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 130px;
+}
+
+.gradientHeader {
+  font-size: 6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right,
+    #e7d6cf,
+    #fbc390,
+    #9fe9ff,
+    #99b5ee
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  background-size: 300%;
+  background-position: -300%;
+
+  -webkit-animation: animatedText 3s infinite alternate-reverse;
+  -moz-animation: animatedText 3s infinite alternate-reverse;
+  -o-animation: animatedText 3s infinite alternate-reverse;
+  animation: animatedText 3s infinite alternate-reverse;
+}
+
+@-webkit-keyframes animatedText {from { background-position: 0%;}to { background-position: 100%;}}
+@-moz-keyframes animatedText {from { background-position: 0%;}to { background-position: 100%;}}
+@-o-keyframes animatedText {from { background-position: 0%;}to { background-position: 100%;}}
+@keyframes animatedText {from { background-position: 0%;}to { background-position: 100%;}}

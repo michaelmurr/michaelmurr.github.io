@@ -4,7 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #000;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  background-color: #121212;
 }
 
 li,
@@ -21,16 +25,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 20px 10%;
+  position: sticky;
+  background-color: rgba(18, 18, 18, 0.95);
+  top: 0;
+  z-index: 99;
 }
 
 .logo {
   cursor: pointer;
   width: 180px;
-}
-
-.nav {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .nav_links {
@@ -47,38 +51,52 @@ header {
 }
 .nav_links li a:hover {
   color: #fbc390;
+  transform: scale(1.1);
 }
 
 button {
-  padding: 9px 25px;
-  background-color: rgba(251, 195, 144, 1);
-  color: #000;
-  border: none;
-  border-radius: 50px;
+  padding: 8px 20px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.8s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-button:hover {
-  background-color: rgba(251, 195, 144, 0.8);
+.btn-primary{
+  color: #000;
+  background-color: #fbc38e;
+  border: 3px solid #fbc38e;
+  
 }
 
-.projectBtn{
-    margin-top: 2rem;
+.bnt-secondary{
+  background-color: rgba(251, 196, 144, 0);
+  color: #fbc38e;
+}
+
+.btn-primary:hover {
+  border-color: #fbc38ed2;
+  transform: scale(1.05);
+  background-color: #fbc38ed2;
+}
+
+.projectBtn {
+  margin-top: 2rem;
 }
 
 .headerContainer {
-  margin-top: 250px;
+  margin-top: 10.5rem;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   padding-left: 10%;
 }
-
-.gradientHeader {
+.main_heading{
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+}
+
+.gradientHeader {
   background-image: linear-gradient(
     to right,
     #e7d6cf,
@@ -89,17 +107,134 @@ button:hover {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
   background-size: 300%;
   background-position: -300%;
 
-  -webkit-animation: animatedText 3s infinite alternate-reverse;
-  -moz-animation: animatedText 3s infinite alternate-reverse;
-  -o-animation: animatedText 3s infinite alternate-reverse;
-  animation: animatedText 3s infinite alternate-reverse;
+  -webkit-animation: animatedText 2s infinite alternate-reverse;
+  -moz-animation: animatedText 2s infinite alternate-reverse;
+  -o-animation: animatedText 2s infinite alternate-reverse;
+  animation: animatedText 2s infinite alternate-reverse;
 }
 
-@-webkit-keyframes animatedText {from { background-position: 0%;}to { background-position: 100%;}}
-@-moz-keyframes animatedText {from { background-position: 0%;}to { background-position: 100%;}}
-@-o-keyframes animatedText {from { background-position: 0%;}to { background-position: 100%;}}
-@keyframes animatedText {from { background-position: 0%;}to { background-position: 100%;}}
+.subtitle{
+  font-size:3rem;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  border-radius: 40px;
+  width: 85%;
+  margin: auto;
+  margin-top: 20rem;
+}
+
+.projectLinkBtn {
+  background-color: #99b5ee;
+  border: 3px solid #99b5ee;
+  transition: all 0.3s ease;
+}
+
+.projectLinkBtn:hover{
+  background-color: rgba(153, 181, 238, 0);
+  color: #99b5ee;
+  
+}
+
+.project {
+  position: relative;
+  border-radius: 20px;
+  width: 25rem;
+  height: 15rem;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+  background: linear-gradient(0.1turn, #1d1d1d 20%, rgba(251, 195, 142, 0.486));
+  transition: transform 500ms ease;
+}
+.project:hover{
+  transform: scale(1.05);
+}
+
+.project h2 {
+  font-weight: 600;
+}
+
+.project button{
+}
+
+.project img{
+  width: 2.5rem;
+}
+
+.svg_flex{
+  vertical-align: middle;
+}
+
+@-webkit-keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+@-moz-keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+@-o-keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+@keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+@-webkit-keyframes animatedSeparator {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+@-moz-keyframes animatedSeparator {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+@-o-keyframes animatedSeparator {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+@keyframes animatedSeparator {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}

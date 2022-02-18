@@ -54,6 +54,25 @@ header {
   transform: scale(1.1);
 }
 
+.link_underline {
+  position: relative;
+}
+
+.link_underline::after {
+  content: "";
+  position: absolute;
+  background-color: #fbc38e;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.link_underline:hover::after {
+  width: 100%;
+}
+
 button {
   padding: 8px 20px;
   border-radius: 12px;
@@ -61,22 +80,17 @@ button {
   transition: all 0.3s ease 0s;
 }
 
-.btn-primary{
+.btn-primary {
   color: #000;
   background-color: #fbc38e;
   border: 3px solid #fbc38e;
-  
-}
-
-.bnt-secondary{
-  background-color: rgba(251, 196, 144, 0);
-  color: #fbc38e;
 }
 
 .btn-primary:hover {
-  border-color: #fbc38ed2;
-  transform: scale(1.05);
-  background-color: #fbc38ed2;
+  background-color: #1d1d1d;
+  color: #fbc38e;
+  border: 3px solid #fbc38e;
+  
 }
 
 .projectBtn {
@@ -84,13 +98,13 @@ button {
 }
 
 .headerContainer {
-  margin-top: 10.5rem;
+  margin-top: 28vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 10%;
 }
-.main_heading{
+.main_heading {
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -116,11 +130,11 @@ button {
   animation: animatedText 2s infinite alternate-reverse;
 }
 
-.subtitle{
-  font-size:3rem;
+.subtitle {
+  font-size: 3rem;
 }
 
-#projects {
+#projects_section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
@@ -130,47 +144,47 @@ button {
   margin-top: 20rem;
 }
 
-.projectLinkBtn {
-  background-color: #99b5ee;
-  border: 3px solid #99b5ee;
-  transition: all 0.3s ease;
-}
-
-.projectLinkBtn:hover{
-  background-color: rgba(153, 181, 238, 0);
-  color: #99b5ee;
-  
-}
-
 .project {
   position: relative;
   border-radius: 20px;
   width: 25rem;
-  height: 15rem;
+  height: 18rem;
   padding: 2rem;
   margin: 1rem;
   text-align: left;
   font-size: 1.2rem;
-  background: linear-gradient(0.1turn, #1d1d1d 20%, rgba(251, 195, 142, 0.486));
+  background: linear-gradient(0.1turn, #1d1d1d 20%, rgba(0, 0, 0, 0));
   transition: transform 500ms ease;
+  box-shadow: 5px 5px 10px#fbc38e00;
+
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
-.project:hover{
+
+.project:hover {
   transform: scale(1.05);
 }
 
 .project h2 {
   font-weight: 600;
+  text-decoration: underline #fbc38e 3px;
+  margin-bottom: 10px;
 }
 
-.project button{
+.project a {
+  margin: 15px 10px;
+  font-size: 1.1rem;
 }
 
-.project img{
-  width: 2.5rem;
+.flex-svg-container{
+  justify-content: center;
+  margin: .7rem 0;
 }
 
-.svg_flex{
-  vertical-align: middle;
+.flex-svg-container svg{
+  margin: 0;
 }
 
 @-webkit-keyframes animatedText {

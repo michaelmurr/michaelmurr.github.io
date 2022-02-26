@@ -1,0 +1,99 @@
+html {
+    text-align: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    padding: 10px 5%;
+    position: sticky;
+    background-color: #121212;
+    top: 0;
+    z-index: 99;
+    border-bottom: 2px solid #313131;
+}
+
+.nav_links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbc390;
+    width: 45%;
+    transform: translateX(100%);
+}
+
+.nav_links li {
+    opacity: 0;
+}
+
+.cta {
+    display: none;
+}
+
+.burger {
+    display: block;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fbc38e;
+    margin: 5px;
+}
+
+li, a, button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.main_heading {
+    font-size: 2rem;
+}
+.headerContainer {
+    margin: 2rem; 
+    margin-top: 20vh;
+
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #fbc38e;
+    border: 3px solid #fbc38e;
+    padding: 5px 5%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.projectBtn{
+    margin: 2rem;
+}
+
+#projects_section{
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.project{
+    border: 2px solid #fbc38e;
+    border-radius: 10px;
+}
+
+.project h2{
+    text-decoration: underline px solid #fbc38e;
+}

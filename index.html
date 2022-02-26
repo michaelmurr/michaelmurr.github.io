@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mike | Developer</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+
   </head>
   <body>
-    <header>
-      <img src="images/logo.svg" alt="logo" class="logo" />
-      <nav class="nav">
-        <ul class="nav_links">
+    <header class="flex">
+      <div>
+        <img src="images/logo.svg" alt="logo" class="logo" />
+      </div>
+
+      <nav>
+        <ul class="nav_links flex">
           <li><a href="#home" class="link_underline">Home</a></li>
           <li><a href="#about_me" class="link_underline">About Me</a></li>
           <li>
             <a href="#projects_section" class="link_underline">Projects</a>
           </li>
         </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </nav>
       <a href="#" class="cta"><button class="btn-primary">Contact</button></a>
     </header>
     <section id="home">
       <div class="headerContainer">
-        <div class="h1flex">
+        <div>
           <h1 class="main_heading">
             Hi, I'm <span class="gradientHeader">Mike!</span>
           </h1>

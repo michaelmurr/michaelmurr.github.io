@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&family=Nova+Round&display=swap");
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +8,7 @@
   color: #edf0f1;
   font-family: "Montserrat", sans-serif;
 }
+
 html {
   background-color: #121212;
 }
@@ -14,110 +16,24 @@ html {
 li,
 a,
 button {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3rem;
   color: #edf0f1;
   text-decoration: none;
 }
 
-header {
+.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  position: sticky;
-  background-color: rgba(18, 18, 18, 0.95);
-  top: 0;
-  z-index: 99;
-}
-
-.logo {
-  cursor: pointer;
-  width: 180px;
-}
-
-.nav_links {
-  list-style: none;
-}
-
-.nav_links li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.nav_links li a {
-  transition: all 0.3 ease 0s;
-}
-.nav_links li a:hover {
-  color: #fbc390;
-  transform: scale(1.1);
-}
-
-.link_underline {
-  position: relative;
-}
-
-.link_underline::after {
-  content: "";
-  position: absolute;
-  background-color: #fbc38e;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
-}
-
-.link_underline:hover::after {
-  width: 100%;
-}
-
-button {
-  padding: 8px 20px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-.btn-primary {
-  color: #000;
-  background-color: #fbc38e;
-  border: 3px solid #fbc38e;
-}
-
-.btn-primary:hover {
-  background-color: #1d1d1d;
-  color: #fbc38e;
-  border: 3px solid #fbc38e;
-  
-}
-
-.projectBtn {
-  margin-top: 2rem;
-}
-
-.headerContainer {
-  margin-top: 28vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 10%;
-}
-.main_heading {
-  font-size: 6rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
 }
 
 .gradientHeader {
-  background-image: linear-gradient(
-    to right,
-    #e7d6cf,
-    #fbc390,
-    #9fe9ff,
-    #99b5ee
-  );
+  background-image: linear-gradient(to right,
+      #e7d6cf,
+      #fbc390,
+      #9fe9ff,
+      #99b5ee);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -130,125 +46,234 @@ button {
   animation: animatedText 2s infinite alternate-reverse;
 }
 
-.subtitle {
-  font-size: 3rem;
+
+
+@media only screen and (min-width: 769px) {
+  header {
+    padding: 20px 10%;
+    position: sticky;
+    background-color: rgba(18, 18, 18, 0.95);
+    top: 0;
+    z-index: 99;
+  }
+
+
+  .logo {
+    cursor: pointer;
+    width: 160px;
+  }
+
+  .nav_links li {
+    list-style: none;
+    padding: 0 20px;
+  }
+
+  .nav_links li a {
+    transition: all 0.3 ease 0s;
+  }
+
+  .nav_links li a:hover {
+    color: #fbc390;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .link_underline {
+    position: relative;
+  }
+
+  .link_underline::after {
+    content: "";
+    position: absolute;
+    background-color: #fbc38e;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+  }
+
+  .link_underline:hover::after {
+    width: 100%;
+  }
+
+  button {
+    padding: 8px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  .btn-primary {
+    color: #000;
+    background-color: #fbc38e;
+    border: 3px solid #fbc38e;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d1d1d;
+    color: #fbc38e;
+    border: 3px solid #fbc38e;
+  }
+
+  .projectBtn {
+    margin-top: 2rem;
+  }
+
+  .headerContainer {
+    margin-top: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+  }
+
+  .main_heading {
+    font-size: 6rem;
+    font-weight: 600;
+  }
+
+
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  #projects_section {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    */
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    margin-top: 20rem;
+  }
+
+  .project {
+    position: relative;
+    border-radius: 20px;
+    width: 25rem;
+    height: 19rem;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: left;
+    font-size: 1.2rem;
+    background: linear-gradient(0.1turn, #1d1d1d 20%, rgba(0, 0, 0, 0));
+    transition: transform 500ms ease;
+    box-shadow: 5px 5px 10px#fbc38e00;
+
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .project:hover {
+    transform: scale(1.05);
+  }
+
+  .project h2 {
+    font-weight: 600;
+    text-decoration: underline #fbc38e 3px;
+    margin-bottom: 10px;
+  }
+
+  .project a {
+    margin: 15px 10px;
+    font-size: 1.1rem;
+  }
+
+  .flex-svg-container {
+    justify-content: center;
+    margin: 0.7rem 0;
+  }
+
+  .flex-svg-container svg {
+    margin: 0;
+  }
+
+  @-webkit-keyframes animatedText {
+    from {
+      background-position: 0%;
+    }
+
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @-moz-keyframes animatedText {
+    from {
+      background-position: 0%;
+    }
+
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @-o-keyframes animatedText {
+    from {
+      background-position: 0%;
+    }
+
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @keyframes animatedText {
+    from {
+      background-position: 0%;
+    }
+
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @-webkit-keyframes animatedSeparator {
+    from {
+      background-position: 0%;
+    }
+
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @-moz-keyframes animatedSeparator {
+    from {
+      background-position: 0%;
+    }
+
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @-o-keyframes animatedSeparator {
+    from {
+      background-position: 0%;
+    }
+
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @keyframes animatedSeparator {
+    from {
+      background-position: 0%;
+    }
+
+    to {
+      background-position: 100%;
+    }
+  }
 }
 
-#projects_section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  border-radius: 40px;
-  width: 85%;
-  margin: auto;
-  margin-top: 20rem;
-}
-
-.project {
-  position: relative;
-  border-radius: 20px;
-  width: 25rem;
-  height: 19rem;
-  padding: 2rem;
-  margin: 1rem;
-  text-align: left;
-  font-size: 1.2rem;
-  background: linear-gradient(0.1turn, #1d1d1d 20%, rgba(0, 0, 0, 0));
-  transition: transform 500ms ease;
-  box-shadow: 5px 5px 10px#fbc38e00;
-
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.project:hover {
-  transform: scale(1.05);
-}
-
-.project h2 {
-  font-weight: 600;
-  text-decoration: underline #fbc38e 3px;
-  margin-bottom: 10px;
-}
-
-.project a {
-  margin: 15px 10px;
-  font-size: 1.1rem;
-}
-
-.flex-svg-container{
-  justify-content: center;
-  margin: .7rem 0;
-}
-
-.flex-svg-container svg{
-  margin: 0;
-}
-
-@-webkit-keyframes animatedText {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
-}
-@-moz-keyframes animatedText {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
-}
-@-o-keyframes animatedText {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
-}
-@keyframes animatedText {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
-}
-
-@-webkit-keyframes animatedSeparator {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
-}
-@-moz-keyframes animatedSeparator {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
-}
-@-o-keyframes animatedSeparator {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
-}
-@keyframes animatedSeparator {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
-}

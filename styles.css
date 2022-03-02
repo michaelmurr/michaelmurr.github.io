@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&family=Nova+Round&display=swap");
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,11 +28,13 @@ button {
 }
 
 .gradientHeader {
-  background-image: linear-gradient(to right,
-      #e7d6cf,
-      #fbc390,
-      #9fe9ff,
-      #99b5ee);
+  background-image: linear-gradient(
+    to right,
+    #e7d6cf,
+    #fbc390,
+    #9fe9ff,
+    #99b5ee
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -46,8 +47,6 @@ button {
   animation: animatedText 2s infinite alternate-reverse;
 }
 
-
-
 @media only screen and (min-width: 769px) {
   header {
     padding: 20px 10%;
@@ -57,12 +56,10 @@ button {
     z-index: 99;
   }
 
+  button:hover {
+    background-color: rgba(251, 195, 144, 0.7);
+  }
 
-<<<<<<< HEAD
-button:hover {
-  background-color: rgba(251, 195, 144, 0.7);
-}
-=======
   .logo {
     cursor: pointer;
     width: 160px;
@@ -84,8 +81,7 @@ button:hover {
   .burger {
     display: none;
   }
->>>>>>> 5bae93cf8cac44224480684eb6c7fd26bebbc9c0
-
+  
   .link_underline {
     position: relative;
   }
@@ -140,7 +136,6 @@ button:hover {
     font-size: 6rem;
     font-weight: 600;
   }
-
 
   .subtitle {
     font-size: 3rem;
@@ -282,4 +277,3 @@ button:hover {
     }
   }
 }
-

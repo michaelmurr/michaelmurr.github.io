@@ -7,7 +7,6 @@
     <title>Mike | Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mobile.css" />
-
   </head>
   <body>
     <header class="flex">
@@ -44,9 +43,28 @@
         <button class="projectBtn btn-primary">See My Projects</button>
       </div>
     </section>
-    <section id="about_me"></section>
+    <section id="about_me">
+      <div class="about_me_wrapper">
+        <div class="profilePicContainer">
+          <img
+            class="profilePicture"
+            src="images/profile.jpg"
+            alt="picture of me"
+          />
+        </div>
+
+        <h2>&ltMichael Murr/&gt</h2>
+        <p class="about_me_text">
+          I am a self-taught developer located in the state of Bavaria in
+          Germany. My interests and skills span across a variety of different
+          technical fields, including Fullstack Webdevelopment.
+        </p>
+      </div>
+    </section>
+    <h2>&ltProjects/&gt</h2>
     <section id="projects_section">
-      <div class="project">
+      <div class="projectWrapper">
+        <div class="project">
         <h2>InstahamJS</h2>
         <p>Fullstack Twitter clone</p>
         <br />
@@ -294,6 +312,8 @@
           >View Code</a
         >
       </div>
+      </div>
+      <div class="projectWrapper">
       <div class="project">
         <h2>FileserverJS</h2>
         <p>Project that turns my Raspberry Pi into a local fileserver</p>
@@ -341,6 +361,8 @@
           >View Code</a
         >
       </div>
+    </div>
+    <div class="projectWrapper">
       <div class="project">
         <h2>PseudoFileCreator</h2>
         <p>Java programm that creates a set amount of txt files</p>
@@ -388,6 +410,7 @@
           >View Code</a
         >
       </div>
+    </div>
     </section>
   </body>
 </html>

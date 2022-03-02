@@ -47,6 +47,46 @@ button {
   animation: animatedText 2s infinite alternate-reverse;
 }
 
+@-webkit-keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+@-moz-keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+@-o-keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+@keyframes animatedText {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
 @media only screen and (min-width: 769px) {
   header {
     padding: 20px 10%;
@@ -81,7 +121,7 @@ button {
   .burger {
     display: none;
   }
-  
+
   .link_underline {
     position: relative;
   }
@@ -143,8 +183,8 @@ button {
 
   #projects_section {
     /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    */
+      grid-template-columns: 1fr 1fr 1fr;
+      */
     display: flex;
     justify-content: center;
     border-radius: 40px;
@@ -195,85 +235,5 @@ button {
 
   .flex-svg-container svg {
     margin: 0;
-  }
-
-  @-webkit-keyframes animatedText {
-    from {
-      background-position: 0%;
-    }
-
-    to {
-      background-position: 100%;
-    }
-  }
-
-  @-moz-keyframes animatedText {
-    from {
-      background-position: 0%;
-    }
-
-    to {
-      background-position: 100%;
-    }
-  }
-
-  @-o-keyframes animatedText {
-    from {
-      background-position: 0%;
-    }
-
-    to {
-      background-position: 100%;
-    }
-  }
-
-  @keyframes animatedText {
-    from {
-      background-position: 0%;
-    }
-
-    to {
-      background-position: 100%;
-    }
-  }
-
-  @-webkit-keyframes animatedSeparator {
-    from {
-      background-position: 0%;
-    }
-
-    to {
-      background-position: 100%;
-    }
-  }
-
-  @-moz-keyframes animatedSeparator {
-    from {
-      background-position: 0%;
-    }
-
-    to {
-      background-position: 100%;
-    }
-  }
-
-  @-o-keyframes animatedSeparator {
-    from {
-      background-position: 0%;
-    }
-
-    to {
-      background-position: 100%;
-    }
-  }
-
-  @keyframes animatedSeparator {
-    from {
-      background-position: 0%;
-    }
-
-    to {
-      background-position: 100%;
-    }
   }
 }

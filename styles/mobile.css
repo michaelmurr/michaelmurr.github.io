@@ -91,6 +91,7 @@
   .main_heading {
     font-size: 3rem;
   }
+
   .headerContainer {
     margin: 2rem;
     margin-top: 20vh;
@@ -98,8 +99,8 @@
 
   .btn-primary {
     color: #121212;
-    background-color: #99b5ee;
-    border: 3px solid #99b5ee;
+    background-color: #fbc38e;
+    border: 3px solid #fbc38e;
     padding: 5px 5%;
     font-size: 1.2rem;
     border-radius: 5px;
@@ -142,12 +143,12 @@
   }
 
   .profilePicContainer {
-    width: 55%;
-    height: 48vw;
+    width: 12rem;
+    height: 12rem;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    margin-top: -35%;
+    margin-top: -8rem;
     border: 6px solid #121212;
   }
 
@@ -206,7 +207,7 @@
     width: 95%;
     margin: 0 30px;
     height: 13rem;
-    background: #99b5ee;
+    background: #fbc38e;
   }
   .project h3,
   .project p {
@@ -238,7 +239,7 @@
   }
 
   .light_span::after {
-    background-color: #99b5ee;
+    background-color: #fbc38e;
   }
 
   @keyframes underline_anim {

@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mike | Developer</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/mobile.css" />
     <link rel="stylesheet" href="styles/desktop.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
   </head>
   <body>
     <header class="flex">
       <div>
         <img src="images/logo.svg" alt="logo" class="logo" />
       </div>
-
       <nav>
         <ul class="nav_links flex">
           <li><a href="#home" class="link_underline">Home</a></li>
@@ -23,7 +22,6 @@
             <a href="#projects_section" class="link_underline">Projects</a>
           </li>
           <li></li>
-
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -55,22 +53,22 @@
             alt="picture of me"
           />
         </div>
-
-        <h2>&lt<span class="underline dark_span">Michael Murr</span>/&gt</h2>
-        <p class="about_me_text">
-          I am a self-taught developer located in the state of Bavaria in
-          Germany. My interests and skills span across a variety of different
-          technical fields, including Fullstack Webdevelopment.
-        </p>
+        <div class="textWrapper">
+          <h2>&lt<span class="underline dark_span">Michael Murr</span>/&gt</h2>
+          <p class="about_me_text">
+            I am a self-taught developer located in the state of Bavaria in
+            Germany. My interests and skills include a variety of different
+           technical fields, like Fullstack Webdevelopment.
+          </p>
+        </div>
       </div>
     </section>
-    <h2 class="projects_heading">&lt<span class="underline light_span">Projects</span>/&gt</h2>
+    <h2 class="projects_heading"><span>&lt<span class="underline light_span">Projects</span>/&gt</span></h2>
     <section id="projects_section">
       <div class="projectWrapper">
         <div class="project">
         <h3>InstahamJS</h3>
-        <p>Fullstack Twitter clone</p>
-        <br />
+        <p>Fullstack Twitter clone (Work in Progress)</p>
         <a href="https://instahamjs.netlify.app"><button class="btn-secondary">Try it out</button>
         <a
           href="https://github.com/michaelmurr/instahamjs"
@@ -84,7 +82,6 @@
       <div class="project">
         <h3>FileserverJS</h3>
         <p>Project that turns my Raspberry Pi into a local fileserver</p>
-        <br />
         <a
           href="https://github.com/michaelmurr/fileserverjs"
           target="_blank"
@@ -97,7 +94,6 @@
       <div class="project">
         <h3>PseudoFileCreator</h3>
         <p>Java programm that creates a set amount of txt files</p>
-        <br />
         <a
           href="https://github.com/michaelmurr/PseudoFileCreator"
           target="_blank"

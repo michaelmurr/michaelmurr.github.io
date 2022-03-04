@@ -1,0 +1,270 @@
+@media only screen and (max-width: 768px) {
+  html {
+    text-align: center;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  hr {
+    border: 1px solid #fbc38e;
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 1rem 5%;
+    position: sticky;
+    background-color: #121212;
+    top: 0;
+    z-index: 99;
+    border-bottom: 2px solid #fbc38e;
+  }
+
+  .nav_links {
+    position: fixed;
+    right: 0;
+    height: 93vh;
+    top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(250, 195, 143, 0.98);
+    width: 50%;
+    list-style-type: none;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav_links li {
+    opacity: 0;
+  }
+  .nav_links li a {
+    color: #000;
+  }
+  .cta {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fbc38e;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active {
+    transform: translate(0%);
+  }
+
+  li,
+  a,
+  button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 120px;
+    cursor: pointer;
+  }
+
+  .main_heading {
+    font-size: 3rem;
+  }
+  .headerContainer {
+    margin: 2rem;
+    margin-top: 20vh;
+  }
+
+  .btn-primary {
+    color: #121212;
+    background-color: #99b5ee;
+    border: 3px solid #99b5ee;
+    padding: 5px 5%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+
+  .btn-secondary {
+    color: #121212;
+    background-color: transparent;
+    border: 3px solid #121212;
+    padding: 5px 5%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .btn-primary:active {
+    background-color: #ad8661;
+    border-color: #ad8661;
+  }
+
+  #about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 35vh;
+  }
+
+  .about_me_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 5rem;
+    background-color: #fbc38e;
+  }
+
+  .profilePicContainer {
+    width: 55%;
+    height: 48vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -35%;
+    border: 6px solid #121212;
+  }
+
+  .profilePicture {
+    position: absolute;
+    display: inline;
+    margin: 0 auto;
+    height: 142%;
+    width: auto;
+    left: -5px;
+    top: -20%;
+  }
+
+  #about_me p {
+    color: #000;
+    margin-top: 1.2rem;
+  }
+
+  #about_me h2,
+  .dark_span {
+    color: #121212;
+  }
+  #about_me h2,
+  span {
+    margin-top: 1.2rem;
+  }
+
+  .projectBtn {
+    margin: 2rem;
+  }
+
+  #projects_section {
+    margin: 2rem 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .projects_heading {
+    margin-top: 5rem;
+  }
+
+  .projectWrapper {
+    width: 90vw;
+    flex: none;
+    scroll-snap-align: start;
+  }
+
+  .projectWrapper h2 {
+    text-decoration: underline px solid #fbc38e;
+  }
+
+  .project {
+    padding: 0.5rem;
+    position: relative;
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 30px;
+    height: 13rem;
+    background: #99b5ee;
+  }
+  .project h3,
+  .project p {
+    color: #000;
+  }
+
+  .proj_anchor {
+    color: #121212;
+    text-decoration: underline 3px #121212;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .underline {
+    position: relative;
+  }
+
+  .underline::after {
+    content: "";
+    position: absolute;
+    background-color: #121212;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+    animation: underline_anim 0.5s 1s ease-in-out forwards;
+  }
+
+  .light_span::after {
+    background-color: #99b5ee;
+  }
+
+  @keyframes underline_anim {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(3.125rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}

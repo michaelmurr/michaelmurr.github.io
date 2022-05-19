@@ -9,7 +9,7 @@
 
   button:hover {
     background-color: rgba(251, 195, 142, 0.7);
-    border-color: rgba(251, 195, 142, 0.7);
+    border-color: rgba(251, 255, 142, 0.7);
   }
 
   h2 {
@@ -73,8 +73,8 @@
 
   .btn-primary:hover {
     color: #000;
-    background-color: rgba(251, 195, 142, 0.7);
-    border: 3px solid rgba(251, 195, 142, 0.7);
+    background-color: #fbc38eb3;
+    border: 3px solid rgba(251, 195, 142, 0);
   }
   .projectBtn {
     margin-top: 2rem;
@@ -109,11 +109,10 @@
     margin: auto;
   }
 
-
-  .projects_heading{
-      margin: 5rem 0;
-      display: flex;
-      justify-content: center;
+  .projects_heading {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
   }
 
   .underline {
@@ -135,7 +134,7 @@
   .light_span::after {
     background-color: #fbc38e;
   }
-  
+
   .project {
     position: relative;
     border-radius: 20px;
@@ -157,9 +156,9 @@
 
   .project:hover {
     transform: scale(1.05);
-}
+  }
 
-.btn-secondary {
+  .btn-secondary {
     color: #121212;
     background-color: transparent;
     border: 3px solid #121212;
@@ -180,20 +179,22 @@
     right: 2rem;
   }
 
-.project h3 {
+  .project h3 {
     font-weight: 600;
     text-decoration: underline #121212 3px;
     margin-bottom: 10px;
     font-size: 1.8rem;
-}
+  }
 
-.project a {
+  .project a {
     margin: 15px 10px;
     font-size: 1.1rem;
-}
+  }
 
-.project h3, .project p, .project a{
-      color: #121212;
+  .project h3,
+  .project p,
+  .project a {
+    color: #121212;
   }
 
   .flex-svg-container {

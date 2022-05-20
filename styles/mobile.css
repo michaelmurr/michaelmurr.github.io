@@ -32,6 +32,10 @@
     border-bottom: 2px solid #fbc38e;
   }
 
+  .brand_wrapper {
+    display: none;
+  }
+
   .nav_links {
     position: fixed;
     right: 0;

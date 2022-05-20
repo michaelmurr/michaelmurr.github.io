@@ -13,6 +13,26 @@ html {
   scroll-behavior: smooth;
 }
 
+.fadeIn {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.fadeIn.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.footer_separator {
+  width: 85%;
+  margin: 0 auto;
+  border-top: 3px solid #fbc38e;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
 li,
 a,
 button {
@@ -32,7 +52,7 @@ button {
   background-image: linear-gradient(
     to right,
     #e7d6cf,
-    #fbc390,
+    #fbc38e,
     #9fe9ff,
     #99b5ee
   );

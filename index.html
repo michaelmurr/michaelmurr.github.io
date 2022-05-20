@@ -17,11 +17,14 @@
       </div>
       <nav>
         <ul class="nav_links flex">
+          <li></li>
+
           <li><a href="#home" class="link_underline">Home</a></li>
           <li><a href="#about_me" class="link_underline">About Me</a></li>
           <li>
             <a href="#projects_section" class="link_underline">Projects</a>
           </li>
+          <li></li>
           <li></li>
         </ul>
         <div class="burger">
@@ -51,7 +54,7 @@
       </div>
     </section>
     <section id="about_me">
-      <div class="about_me_wrapper">
+      <div class="about_me_wrapper fadeIn">
         <div class="profilePicContainer">
           <img
             class="profilePicture"
@@ -71,9 +74,9 @@
         </div>
       </div>
     </section>
-    <h2 class="projects_heading"><span>&lt<span class="underline light_span">Projects</span>/&gt</span></h2>
+    <h2 class="projects_heading fadeIn"><span>&lt<span class="underline light_span">Projects</span>/&gt</span></h2>
     <section id="projects_section">
-      <div class="projectWrapper">
+      <div class="projectWrapper fadeIn">
         <div class="project">
         <h3>InstahamJS</h3>
         <p>Fullstack Twitter clone</p>
@@ -86,7 +89,7 @@
         >
       </div>
       </div>
-      <div class="projectWrapper">
+      <div class="projectWrapper fadeIn">
         <div class="project">
           <h3>SimpleWeatherApp</h3>
           <p>A very basic Mobile Weather App I built as my first React Native project</p>
@@ -98,7 +101,7 @@
           >
         </div>
       </div>
-      <div class="projectWrapper">
+      <div class="projectWrapper fadeIn">
       <div class="project">
         <h3>FileserverJS</h3>
         <p>Project that turns my Raspberry Pi into a local fileserver</p>
@@ -110,7 +113,7 @@
         >
       </div>
     </div>
-    <div class="projectWrapper">
+    <div class="projectWrapper fadeIn">
       <div class="project">
         <h3>PseudoFileCreator</h3>
         <p>Java programm that creates a set amount of txt files</p>
@@ -124,5 +127,11 @@
     </div>
     </section>
     <script src="scripts/nav.js"></script>
+    <script src="scripts/fadeIn.js"></script>
+    <footer>
+      <hr class="footer_separator">
+      <p>Email me : michael.murr04@gmail.com</p>
+      <p>Or reach out on Instagram </p>
+    </footer>
   </body>
 </html>

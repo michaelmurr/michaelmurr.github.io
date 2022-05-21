@@ -26,11 +26,9 @@ html {
 }
 
 .footer_separator {
-  width: 85%;
-  margin: 0 auto;
-  border-top: 3px solid #fbc38e;
-  margin-top: 8rem;
-  margin-bottom: 3rem;
+  width: 55%;
+  border-top: 1px solid #fbc38e;
+  margin: 8rem auto 1rem;
 }
 
 li,
@@ -46,6 +44,15 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.iconsContainer {
+  width: 15%;
+  margin: 0 auto;
+}
+
+.email {
+  margin: 1rem auto;
 }
 
 .gradientHeader {
@@ -66,36 +73,6 @@ button {
   -moz-animation: animatedText 2s infinite alternate-reverse;
   -o-animation: animatedText 2s infinite alternate-reverse;
   animation: animatedText 2s infinite alternate-reverse;
-}
-
-@-webkit-keyframes animatedText {
-  from {
-    background-position: 0%;
-  }
-
-  to {
-    background-position: 100%;
-  }
-}
-
-@-moz-keyframes animatedText {
-  from {
-    background-position: 0%;
-  }
-
-  to {
-    background-position: 100%;
-  }
-}
-
-@-o-keyframes animatedText {
-  from {
-    background-position: 0%;
-  }
-
-  to {
-    background-position: 100%;
-  }
 }
 
 @keyframes animatedText {

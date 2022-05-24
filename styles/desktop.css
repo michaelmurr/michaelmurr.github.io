@@ -78,6 +78,7 @@
   .btn-primary:hover {
     background-color: #fbc38eb3;
     border: 3px solid rgba(251, 195, 142, 0);
+    transform: scale(1.05);
   }
 
   .projectBtn {
@@ -222,7 +223,7 @@
   }
 
   .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 
   .btn-secondary {
@@ -353,7 +354,8 @@
 
   .contact_icon {
     width: 3rem;
-    height: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     margin: 1rem;
     transition: all 0.3s ease;
   }
@@ -364,6 +366,10 @@
 
   #contact {
     margin: 8rem 0;
+  }
+
+  .contact-li {
+    display: none;
   }
 
   .form-container {

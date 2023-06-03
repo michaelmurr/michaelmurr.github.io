@@ -6,6 +6,11 @@
     top: 0;
     z-index: 99;
   }
+  .impressumContainer {
+    display: flex;
+    justify-content: center;
+    padding: 100;
+  }
 
   h2 {
     font-size: 2.8rem;
